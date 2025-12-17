@@ -1,0 +1,46 @@
+\doxysection{mod\+Alpha\+Cipher.\+h}
+\hypertarget{modAlphaCipher_8h_source}{}\label{modAlphaCipher_8h_source}\mbox{\hyperlink{modAlphaCipher_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <locale>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <codecvt>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00022\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classcipher__error}{cipher\_error}}\ :\ \textcolor{keyword}{public}\ std::exception\ \{}
+\DoxyCodeLine{00023\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00024\ \ \ \ \ std::string\ message;}
+\DoxyCodeLine{00025\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classcipher__error_a8ed655209c1fc1ef7dab286f501fa344}{cipher\_error}}(\textcolor{keyword}{const}\ std::string\&\ msg)\ :\ message(msg)\ \{\}}
+\DoxyCodeLine{00031\ \ \ \ \ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{classcipher__error_a9fe48d1481fd646df78ff449232d2db2}{what}}()\ const\ noexcept\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00037\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ message.c\_str();}
+\DoxyCodeLine{00038\ \ \ \ \ \}}
+\DoxyCodeLine{00039\ \};}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classmodAlphaCipher}{modAlphaCipher}}}
+\DoxyCodeLine{00048\ \{}
+\DoxyCodeLine{00049\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00050\ \ \ \ \ std::wstring\ \mbox{\hyperlink{classmodAlphaCipher_ab7e0c7d3c87f4c8b7435d84f31c6cb62}{numAlpha}}\ =\ L\textcolor{stringliteral}{"{}АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"{}};\ }
+\DoxyCodeLine{00051\ \ \ \ \ std::map\ <wchar\_t,int>\ \mbox{\hyperlink{classmodAlphaCipher_ad896cbfa7d4c32d1c9627b0812b4a677}{alphaNum}};\ }
+\DoxyCodeLine{00052\ \ \ \ \ std::vector\ <int>\ \mbox{\hyperlink{classmodAlphaCipher_aaddfb3bc0a3806b17e94c56fea5bad87}{key}};\ }
+\DoxyCodeLine{00053\ \ \ \ \ }
+\DoxyCodeLine{00059\ \ \ \ \ std::vector<int>\ \mbox{\hyperlink{classmodAlphaCipher_a12ace58352c18bac7a7b61f312a4c8d6}{convert}}(\textcolor{keyword}{const}\ std::wstring\&\ s);}
+\DoxyCodeLine{00060\ \ \ \ \ }
+\DoxyCodeLine{00067\ \ \ \ \ std::wstring\ \mbox{\hyperlink{classmodAlphaCipher_a12ace58352c18bac7a7b61f312a4c8d6}{convert}}(\textcolor{keyword}{const}\ std::vector<int>\&\ v);}
+\DoxyCodeLine{00068\ \ \ \ \ }
+\DoxyCodeLine{00074\ \ \ \ \ std::wstring\ \mbox{\hyperlink{classmodAlphaCipher_a38eedcc7d5be85c8e06a6b862a71d815}{toUpper}}(\textcolor{keyword}{const}\ std::wstring\&\ s);}
+\DoxyCodeLine{00075\ \ \ \ \ }
+\DoxyCodeLine{00076\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00080\ \ \ \ \ \mbox{\hyperlink{classmodAlphaCipher_a4f0a86c20f5d836f66cb1e640d875e6b}{modAlphaCipher}}()=\textcolor{keyword}{delete};}
+\DoxyCodeLine{00081\ \ \ \ \ }
+\DoxyCodeLine{00087\ \ \ \ \ \mbox{\hyperlink{classmodAlphaCipher_a4f0a86c20f5d836f66cb1e640d875e6b}{modAlphaCipher}}(\textcolor{keyword}{const}\ std::wstring\&\ skey);}
+\DoxyCodeLine{00088\ \ \ \ \ }
+\DoxyCodeLine{00097\ \ \ \ \ std::wstring\ \mbox{\hyperlink{classmodAlphaCipher_a5edc499881373a275a3cd14f0cab6c19}{encrypt}}(\textcolor{keyword}{const}\ std::wstring\&\ open\_text);}
+\DoxyCodeLine{00098\ \ \ \ \ }
+\DoxyCodeLine{00106\ \ \ \ \ std::wstring\ \mbox{\hyperlink{classmodAlphaCipher_a941eab79d9ec1a8de4e1f9cf2a80ff35}{decrypt}}(\textcolor{keyword}{const}\ std::wstring\&\ cipher\_text);}
+\DoxyCodeLine{00107\ \};}
+
+\end{DoxyCode}

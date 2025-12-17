@@ -1,0 +1,88 @@
+\doxysection{Класс cipher\+\_\+error}
+\hypertarget{classcipher__error}{}\label{classcipher__error}\index{cipher\_error@{cipher\_error}}
+
+
+Класс для исключений шифрования  
+
+
+
+
+{\ttfamily \#include $<$mod\+Alpha\+Cipher.\+h$>$}
+
+
+
+Граф наследования\+:cipher\+\_\+error\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{classcipher__error__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Граф связей класса cipher\+\_\+error\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=157pt]{classcipher__error__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classcipher__error_a8ed655209c1fc1ef7dab286f501fa344}{cipher\+\_\+error}} (const std\+::string \&msg)
+\begin{DoxyCompactList}\small\item\em Конструктор исключения \end{DoxyCompactList}\item 
+const char \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classcipher__error_a9fe48d1481fd646df78ff449232d2db2}{what}} () const noexcept override
+\begin{DoxyCompactList}\small\item\em Получить сообщение об ошибке \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classcipher__error_ab5dce095aa06b3cbc8b87fb479903161}\label{classcipher__error_ab5dce095aa06b3cbc8b87fb479903161} 
+std\+::string {\bfseries message}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для исключений шифрования 
+
+Наследуется от std\+::exception для интеграции со стандартной системой исключений 
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{classcipher__error_a8ed655209c1fc1ef7dab286f501fa344}\label{classcipher__error_a8ed655209c1fc1ef7dab286f501fa344} 
+\index{cipher\_error@{cipher\_error}!cipher\_error@{cipher\_error}}
+\index{cipher\_error@{cipher\_error}!cipher\_error@{cipher\_error}}
+\doxysubsubsection{\texorpdfstring{cipher\_error()}{cipher\_error()}}
+{\footnotesize\ttfamily cipher\+\_\+error\+::cipher\+\_\+error (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{msg }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [explicit]}}
+
+
+
+Конструктор исключения 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em msg} & Сообщение об ошибке \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Методы}
+\Hypertarget{classcipher__error_a9fe48d1481fd646df78ff449232d2db2}\label{classcipher__error_a9fe48d1481fd646df78ff449232d2db2} 
+\index{cipher\_error@{cipher\_error}!what@{what}}
+\index{what@{what}!cipher\_error@{cipher\_error}}
+\doxysubsubsection{\texorpdfstring{what()}{what()}}
+{\footnotesize\ttfamily const char \texorpdfstring{$\ast$}{*} cipher\+\_\+error\+::what (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [noexcept]}}
+
+
+
+Получить сообщение об ошибке 
+
+\begin{DoxyReturn}{Возвращает}
+Указатель на строку с сообщением об ошибке 
+\end{DoxyReturn}
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{modAlphaCipher_8h}{mod\+Alpha\+Cipher.\+h}}\end{DoxyCompactItemize}

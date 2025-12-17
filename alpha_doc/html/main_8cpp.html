@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Шифрование методом Гронсфельда: Файл main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Шифрование методом Гронсфельда<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл main.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Главный модуль программы шифрования методом Гронсфельда  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="modAlphaCipher_8h_source.html">modAlphaCipher.h</a>&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;locale&gt;</code><br />
+<code>#include &lt;codecvt&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для main.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#amain_8cpp" alt=""/></div>
+<map name="amain_8cpp" id="amain_8cpp">
+<area shape="rect" title="Главный модуль программы шифрования методом Гронсфельда" alt="" coords="366,5,441,31"/>
+<area shape="rect" href="modAlphaCipher_8h.html" title="Заголовочный файл для модуля шифрования методом Гронсфельда" alt="" coords="211,79,340,104"/>
+<area shape="poly" title=" " alt="" coords="384,33,310,74,307,69,381,28"/>
+<area shape="rect" title=" " alt="" coords="339,152,395,177"/>
+<area shape="poly" title=" " alt="" coords="403,32,376,139,371,138,398,30"/>
+<area shape="rect" title=" " alt="" coords="420,152,488,177"/>
+<area shape="poly" title=" " alt="" coords="410,30,448,138,443,140,405,32"/>
+<area shape="rect" title=" " alt="" coords="466,79,538,104"/>
+<area shape="poly" title=" " alt="" coords="421,29,476,68,473,73,418,33"/>
+<area shape="rect" title=" " alt="" coords="179,152,236,177"/>
+<area shape="poly" title=" " alt="" coords="266,106,230,144,226,140,262,102"/>
+<area shape="rect" title=" " alt="" coords="260,152,315,177"/>
+<area shape="poly" title=" " alt="" coords="280,104,286,138,280,139,275,105"/>
+<area shape="rect" title=" " alt="" coords="5,152,52,177"/>
+<area shape="poly" title=" " alt="" coords="233,107,66,154,64,149,232,101"/>
+<area shape="poly" title=" " alt="" coords="292,102,343,141,340,146,288,106"/>
+<area shape="poly" title=" " alt="" coords="305,102,413,144,411,149,303,107"/>
+<area shape="rect" title=" " alt="" coords="76,152,155,177"/>
+<area shape="poly" title=" " alt="" coords="251,106,155,149,153,144,249,102"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:af18b8adccc4e76477573d027e474ffe2" id="r_af18b8adccc4e76477573d027e474ffe2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#af18b8adccc4e76477573d027e474ffe2">exception_handling</a> (const std::wstring &amp;Text, const std::wstring &amp;key, const std::string &amp;testName)</td></tr>
+<tr class="memdesc:af18b8adccc4e76477573d027e474ffe2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработка исключений при тестировании шифрования  <br /></td></tr>
+<tr class="separator:af18b8adccc4e76477573d027e474ffe2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af86c490ba4089b466731b30fdd1d89c7" id="r_af86c490ba4089b466731b30fdd1d89c7"><td class="memItemLeft" align="right" valign="top"><a id="af86c490ba4089b466731b30fdd1d89c7" name="af86c490ba4089b466731b30fdd1d89c7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>testCorrectCases</b> ()</td></tr>
+<tr class="memdesc:af86c490ba4089b466731b30fdd1d89c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тестирование корректных случаев шифрования <br /></td></tr>
+<tr class="separator:af86c490ba4089b466731b30fdd1d89c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16a1feda56a48575ddee9a8f0aff9ed3" id="r_a16a1feda56a48575ddee9a8f0aff9ed3"><td class="memItemLeft" align="right" valign="top"><a id="a16a1feda56a48575ddee9a8f0aff9ed3" name="a16a1feda56a48575ddee9a8f0aff9ed3"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>testErrorCases</b> ()</td></tr>
+<tr class="memdesc:a16a1feda56a48575ddee9a8f0aff9ed3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Тестирование ошибочных случаев шифрования <br /></td></tr>
+<tr class="separator:a16a1feda56a48575ddee9a8f0aff9ed3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec92dad2ac85b89be035df119bab2a6f" id="r_aec92dad2ac85b89be035df119bab2a6f"><td class="memItemLeft" align="right" valign="top"><a id="aec92dad2ac85b89be035df119bab2a6f" name="aec92dad2ac85b89be035df119bab2a6f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>demonstrateErrorTypes</b> ()</td></tr>
+<tr class="memdesc:aec92dad2ac85b89be035df119bab2a6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Демонстрация возможных типов ошибок <br /></td></tr>
+<tr class="separator:aec92dad2ac85b89be035df119bab2a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c04138a5bfe5d72780bb7e82a18e627" id="r_a3c04138a5bfe5d72780bb7e82a18e627"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a> (int argc, char **argv)</td></tr>
+<tr class="memdesc:a3c04138a5bfe5d72780bb7e82a18e627"><td class="mdescLeft">&#160;</td><td class="mdescRight">Главная функция программы  <br /></td></tr>
+<tr class="separator:a3c04138a5bfe5d72780bb7e82a18e627"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Главный модуль программы шифрования методом Гронсфельда </p>
+<dl class="section author"><dt>Автор</dt><dd>Ганьшин В.А. </dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>17.12.2025</dd></dl>
+<p>Содержит функции для тестирования модуля шифрования </p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="af18b8adccc4e76477573d027e474ffe2" name="af18b8adccc4e76477573d027e474ffe2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af18b8adccc4e76477573d027e474ffe2">&#9670;&#160;</a></span>exception_handling()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void exception_handling </td>
+          <td>(</td>
+          <td class="paramtype">const std::wstring &amp;&#160;</td>
+          <td class="paramname"><em>Text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::wstring &amp;&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>testName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обработка исключений при тестировании шифрования </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Text</td><td>Текст для обработки </td></tr>
+    <tr><td class="paramname">key</td><td>Ключ шифрования </td></tr>
+    <tr><td class="paramname">testName</td><td>Название теста </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3c04138a5bfe5d72780bb7e82a18e627" name="a3c04138a5bfe5d72780bb7e82a18e627"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c04138a5bfe5d72780bb7e82a18e627">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char **&#160;</td>
+          <td class="paramname"><em>argv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Главная функция программы </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">argc</td><td>Количество аргументов командной строки </td></tr>
+    <tr><td class="paramname">argv</td><td>Массив аргументов командной строки </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Код завершения программы </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

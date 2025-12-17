@@ -1,0 +1,47 @@
+\begin{theindex}
+
+  \item {cipher\_error}, \hyperpage{7}
+    \subitem {cipher\_error}, \hyperpage{8}
+    \subitem {what}, \hyperpage{8}
+  \item {convert}
+    \subitem {modAlphaCipher}, \hyperpage{10}
+
+  \indexspace
+
+  \item {decrypt}
+    \subitem {modAlphaCipher}, \hyperpage{10}
+
+  \indexspace
+
+  \item {encrypt}
+    \subitem {modAlphaCipher}, \hyperpage{11}
+  \item {exception\_handling}
+    \subitem {main.cpp}, \hyperpage{14}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{14}
+  \item {main.cpp}, \hyperpage{13}
+    \subitem {exception\_handling}, \hyperpage{14}
+    \subitem {main}, \hyperpage{14}
+  \item {modAlphaCipher}, \hyperpage{9}
+    \subitem {convert}, \hyperpage{10}
+    \subitem {decrypt}, \hyperpage{10}
+    \subitem {encrypt}, \hyperpage{11}
+    \subitem {modAlphaCipher}, \hyperpage{9}
+    \subitem {toUpper}, \hyperpage{12}
+  \item {modAlphaCipher.cpp}, \hyperpage{15}
+  \item {modAlphaCipher.h}, \hyperpage{15}
+
+  \indexspace
+
+  \item {toUpper}
+    \subitem {modAlphaCipher}, \hyperpage{12}
+
+  \indexspace
+
+  \item {what}
+    \subitem {cipher\_error}, \hyperpage{8}
+
+\end{theindex}
