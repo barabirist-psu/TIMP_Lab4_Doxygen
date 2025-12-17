@@ -1,0 +1,249 @@
+\doxysection{Класс Table\+Cipher}
+\hypertarget{classTableCipher}{}\label{classTableCipher}\index{TableCipher@{TableCipher}}
+
+
+Шифр табличной маршрутной перестановки  
+
+
+
+
+{\ttfamily \#include $<$table\+Cipher.\+h$>$}
+
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTableCipher_a040d10a80b3cc657dd5861745e6913f4}{Table\+Cipher}} (int key)
+\begin{DoxyCompactList}\small\item\em Конструктор с установкой ключа \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classTableCipher_a53d34df7efc5adca17fc99a51f647911}{encrypt}} (const std\+::wstring \&text)
+\begin{DoxyCompactList}\small\item\em Метод шифрования текста \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{classTableCipher_ad50734d082321b96192cf7683414e6f7}{decrypt}} (const std\+::wstring \&cipher\+\_\+text)
+\begin{DoxyCompactList}\small\item\em Метод дешифрования текста \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTableCipher_aa6a0fc03e41057e0ca61356519ed0de6}{validate\+Key}} (int key)
+\begin{DoxyCompactList}\small\item\em Проверка корректности ключа \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classTableCipher_af93dabb0451a9011fe7b277ac4a814e3}\label{classTableCipher_af93dabb0451a9011fe7b277ac4a814e3} 
+int {\bfseries num\+Columns}
+\begin{DoxyCompactList}\small\item\em Количество столбцов таблицы (ключ шифрования) \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Шифр табличной маршрутной перестановки 
+
+Реализует шифрование методом табличной перестановки с заданным количеством столбцов. Запись\+: по горизонтали слева направо, сверху вниз. Чтение\+: сверху вниз, справа налево. \begin{DoxyWarning}{Предупреждения}
+Поддерживает только буквы и пробелы 
+\end{DoxyWarning}
+
+
+\doxysubsection{Конструктор(ы)}
+\Hypertarget{classTableCipher_a040d10a80b3cc657dd5861745e6913f4}\label{classTableCipher_a040d10a80b3cc657dd5861745e6913f4} 
+\index{TableCipher@{TableCipher}!TableCipher@{TableCipher}}
+\index{TableCipher@{TableCipher}!TableCipher@{TableCipher}}
+\doxysubsubsection{\texorpdfstring{TableCipher()}{TableCipher()}}
+{\footnotesize\ttfamily Table\+Cipher\+::\+Table\+Cipher (\begin{DoxyParamCaption}\item[{int}]{key }\end{DoxyParamCaption})}
+
+
+
+Конструктор с установкой ключа 
+
+Конструктор класса \doxylink{classTableCipher}{Table\+Cipher}.
+
+
+\begin{DoxyParams}{Аргументы}
+{\em key} & Количество столбцов таблицы \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classtable__cipher__error}{table\+\_\+cipher\+\_\+error}} & Если ключ некорректен\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Аргументы}
+{\em key} & Количество столбцов таблицы (ключ шифрования) \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classtable__cipher__error}{table\+\_\+cipher\+\_\+error}} & Если ключ некорректен\\
+\hline
+\end{DoxyExceptions}
+Выполняет валидацию ключа и инициализацию объекта. Ключ должен быть положительным целым числом в диапазоне от 1 до 1000.
+
+Пример использования\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{classTableCipher}{TableCipher}}\ cipher(5);\ \textcolor{comment}{//\ Создание\ шифра\ с\ ключом\ 5}}
+
+\end{DoxyCode}
+ 
+
+\doxysubsection{Методы}
+\Hypertarget{classTableCipher_ad50734d082321b96192cf7683414e6f7}\label{classTableCipher_ad50734d082321b96192cf7683414e6f7} 
+\index{TableCipher@{TableCipher}!decrypt@{decrypt}}
+\index{decrypt@{decrypt}!TableCipher@{TableCipher}}
+\doxysubsubsection{\texorpdfstring{decrypt()}{decrypt()}}
+{\footnotesize\ttfamily std\+::wstring Table\+Cipher\+::decrypt (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{cipher\+\_\+text }\end{DoxyParamCaption})}
+
+
+
+Метод дешифрования текста 
+
+Расшифрование текста методом табличной маршрутной перестановки
+
+
+\begin{DoxyParams}{Аргументы}
+{\em cipher\+\_\+text} & Зашифрованный текст \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Расшифрованная строка 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classtable__cipher__error}{table\+\_\+cipher\+\_\+error}} & Если текст пустой или содержит недопустимые символы\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Аргументы}
+{\em cipher\+\_\+text} & Зашифрованный текст \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Расшифрованная строка 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classtable__cipher__error}{table\+\_\+cipher\+\_\+error}} & При некорректных входных данных\\
+\hline
+\end{DoxyExceptions}
+Алгоритм расшифрования (обратный шифрованию)\+:
+\begin{DoxyEnumerate}
+\item {\bfseries{Проверка входных данных}}\+: текст не должен быть пустым и содержать только буквы и пробелы
+\item {\bfseries{Создание таблицы}}\+: вычисление количества строк и создание таблицы num\+Rows × num\+Columns
+\item {\bfseries{Запись в таблицу}}\+: заполнение таблицы по столбцам справа налево, сверху вниз
+\item {\bfseries{Чтение из таблицы}}\+: чтение данных по строкам слева направо, сверху вниз
+\end{DoxyEnumerate}
+
+Особенности алгоритма\+:
+\begin{DoxyItemize}
+\item Учитывается неполнота последней строки таблицы
+\item Пустые ячейки заполняются пробелами и игнорируются при чтении
+\end{DoxyItemize}
+
+Пример работы\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Зашифрованный\ текст:\ \textcolor{stringliteral}{"{}ИТРЕРВИПМ"{}},\ Ключ:\ 3}
+\DoxyCodeLine{Таблица:}
+\DoxyCodeLine{\ \ П\ Р\ И}
+\DoxyCodeLine{\ \ В\ Е\ Т\ \ }
+\DoxyCodeLine{\ \ М\ И\ Р}
+\DoxyCodeLine{Результат:\ \textcolor{stringliteral}{"{}ПРИВЕТМИР"{}}}
+
+\end{DoxyCode}
+ \Hypertarget{classTableCipher_a53d34df7efc5adca17fc99a51f647911}\label{classTableCipher_a53d34df7efc5adca17fc99a51f647911} 
+\index{TableCipher@{TableCipher}!encrypt@{encrypt}}
+\index{encrypt@{encrypt}!TableCipher@{TableCipher}}
+\doxysubsubsection{\texorpdfstring{encrypt()}{encrypt()}}
+{\footnotesize\ttfamily std\+::wstring Table\+Cipher\+::encrypt (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{text }\end{DoxyParamCaption})}
+
+
+
+Метод шифрования текста 
+
+Шифрование текста методом табличной маршрутной перестановки
+
+
+\begin{DoxyParams}{Аргументы}
+{\em text} & Исходный текст для шифрования \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованная строка 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classtable__cipher__error}{table\+\_\+cipher\+\_\+error}} & Если текст пустой или содержит недопустимые символы\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Аргументы}
+{\em text} & Исходный текст для шифрования \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Зашифрованная строка 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classtable__cipher__error}{table\+\_\+cipher\+\_\+error}} & При некорректных входных данных\\
+\hline
+\end{DoxyExceptions}
+Алгоритм шифрования\+:
+\begin{DoxyEnumerate}
+\item {\bfseries{Проверка входных данных}}\+: текст не должен быть пустым и содержать только буквы и пробелы
+\item {\bfseries{Создание таблицы}}\+: вычисление количества строк и создание таблицы num\+Rows × num\+Columns
+\item {\bfseries{Запись в таблицу}}\+: заполнение таблицы по горизонтали слева направо, сверху вниз
+\item {\bfseries{Чтение из таблицы}}\+: чтение данных сверху вниз, справа налево
+\end{DoxyEnumerate}
+
+Пример работы\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{Текст:\ \textcolor{stringliteral}{"{}ПРИВЕТМИР"{}},\ Ключ:\ 3}
+\DoxyCodeLine{Таблица:}
+\DoxyCodeLine{\ \ П\ Р\ И}
+\DoxyCodeLine{\ \ В\ Е\ Т\ \ }
+\DoxyCodeLine{\ \ М\ И\ Р}
+\DoxyCodeLine{Результат:\ \textcolor{stringliteral}{"{}ИТРЕРВИПМ"{}}}
+
+\end{DoxyCode}
+ \Hypertarget{classTableCipher_aa6a0fc03e41057e0ca61356519ed0de6}\label{classTableCipher_aa6a0fc03e41057e0ca61356519ed0de6} 
+\index{TableCipher@{TableCipher}!validateKey@{validateKey}}
+\index{validateKey@{validateKey}!TableCipher@{TableCipher}}
+\doxysubsubsection{\texorpdfstring{validateKey()}{validateKey()}}
+{\footnotesize\ttfamily void Table\+Cipher\+::validate\+Key (\begin{DoxyParamCaption}\item[{int}]{key }\end{DoxyParamCaption})}
+
+
+
+Проверка корректности ключа 
+
+Проверка корректности ключа шифрования
+
+
+\begin{DoxyParams}{Аргументы}
+{\em key} & Ключ для проверки \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classtable__cipher__error}{table\+\_\+cipher\+\_\+error}} & Если ключ некорректен\\
+\hline
+\end{DoxyExceptions}
+
+\begin{DoxyParams}{Аргументы}
+{\em key} & Ключ для проверки \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Исключения}
+{\em \doxylink{classtable__cipher__error}{table\+\_\+cipher\+\_\+error}} & Если ключ \texorpdfstring{$<$}{<}= 0 или \texorpdfstring{$>$}{>} 1000\\
+\hline
+\end{DoxyExceptions}
+Выполняет следующие проверки\+:
+\begin{DoxyItemize}
+\item Ключ должен быть положительным числом
+\item Ключ не должен превышать максимальное значение 1000
+\end{DoxyItemize}
+
+Примеры ошибок\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{classTableCipher_aa6a0fc03e41057e0ca61356519ed0de6}{validateKey}}(-\/5);\ \ \textcolor{comment}{//\ Выбросит\ исключение:\ "{}Ключ\ должен\ быть\ положительным\ числом"{}}}
+\DoxyCodeLine{\mbox{\hyperlink{classTableCipher_aa6a0fc03e41057e0ca61356519ed0de6}{validateKey}}(2000);\ \textcolor{comment}{//\ Выбросит\ исключение:\ "{}Ключ\ слишком\ большой..."{}}}
+
+\end{DoxyCode}
+ 
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{tableCipher_8h}{table\+Cipher.\+h}}\item 
+\mbox{\hyperlink{tableCipher_8cpp}{table\+Cipher.\+cpp}}\end{DoxyCompactItemize}

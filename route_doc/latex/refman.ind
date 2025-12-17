@@ -1,0 +1,77 @@
+\begin{theindex}
+
+  \item {debugPrintTable}
+    \subitem {tableCipher.cpp}, \hyperpage{20}
+  \item {decrypt}
+    \subitem {TableCipher}, \hyperpage{10}
+  \item {demonstrateCipher}
+    \subitem {main.cpp}, \hyperpage{16}
+  \item {demonstrateInputErrors}
+    \subitem {main.cpp}, \hyperpage{16}
+
+  \indexspace
+
+  \item {encrypt}
+    \subitem {TableCipher}, \hyperpage{11}
+
+  \indexspace
+
+  \item {getKeyFromUser}
+    \subitem {main.cpp}, \hyperpage{16}
+  \item {getTextFromUser}
+    \subitem {main.cpp}, \hyperpage{17}
+
+  \indexspace
+
+  \item {main}
+    \subitem {main.cpp}, \hyperpage{17}
+  \item {main.cpp}, \hyperpage{15}
+    \subitem {demonstrateCipher}, \hyperpage{16}
+    \subitem {demonstrateInputErrors}, \hyperpage{16}
+    \subitem {getKeyFromUser}, \hyperpage{16}
+    \subitem {getTextFromUser}, \hyperpage{17}
+    \subitem {main}, \hyperpage{17}
+    \subitem {processCipherOperation}, \hyperpage{17}
+    \subitem {showHelp}, \hyperpage{18}
+    \subitem {string\_to\_wstring}, \hyperpage{18}
+    \subitem {wstring\_to\_string}, \hyperpage{18}
+
+  \indexspace
+
+  \item {processCipherOperation}
+    \subitem {main.cpp}, \hyperpage{17}
+
+  \indexspace
+
+  \item {showHelp}
+    \subitem {main.cpp}, \hyperpage{18}
+  \item {string\_to\_wstring}
+    \subitem {main.cpp}, \hyperpage{18}
+
+  \indexspace
+
+  \item {table\_cipher\_error}, \hyperpage{7}
+    \subitem {table\_cipher\_error}, \hyperpage{8}
+    \subitem {what}, \hyperpage{8}
+  \item {TableCipher}, \hyperpage{9}
+    \subitem {decrypt}, \hyperpage{10}
+    \subitem {encrypt}, \hyperpage{11}
+    \subitem {TableCipher}, \hyperpage{9}
+    \subitem {validateKey}, \hyperpage{12}
+  \item {tableCipher.cpp}, \hyperpage{19}
+    \subitem {debugPrintTable}, \hyperpage{20}
+  \item {tableCipher.h}, \hyperpage{20}
+
+  \indexspace
+
+  \item {validateKey}
+    \subitem {TableCipher}, \hyperpage{12}
+
+  \indexspace
+
+  \item {what}
+    \subitem {table\_cipher\_error}, \hyperpage{8}
+  \item {wstring\_to\_string}
+    \subitem {main.cpp}, \hyperpage{18}
+
+\end{theindex}

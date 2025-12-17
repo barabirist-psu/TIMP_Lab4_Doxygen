@@ -1,0 +1,188 @@
+\doxysection{Файл main.\+cpp}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{main.cpp@{main.cpp}}
+
+
+Главный модуль программы шифрования табличной маршрутной перестановки  
+
+
+{\ttfamily \#include "{}table\+Cipher.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$limits$>$}\newline
+{\ttfamily \#include $<$locale$>$}\newline
+{\ttfamily \#include $<$codecvt$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+Граф включаемых заголовочных файлов для main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+std\+::wstring \mbox{\hyperlink{main_8cpp_ad612e1d5a3738c231a1aeefb21c4d36d}{string\+\_\+to\+\_\+wstring}} (const std\+::string \&str)
+\begin{DoxyCompactList}\small\item\em Преобразование строки в широкую строку \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{main_8cpp_a9e8d9796b27a47431c88a5387b1ed2a0}{wstring\+\_\+to\+\_\+string}} (const std\+::wstring \&wstr)
+\begin{DoxyCompactList}\small\item\em Преобразование широкой строки в обычную строку \end{DoxyCompactList}\item 
+\Hypertarget{main_8cpp_a59c2926dd9b0968badf463aaf4f91422}\label{main_8cpp_a59c2926dd9b0968badf463aaf4f91422} 
+void {\bfseries display\+Menu} ()
+\begin{DoxyCompactList}\small\item\em Отображение главного меню программы \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_a391ca4439faae55f42dab42f27abb013}{get\+Key\+From\+User}} ()
+\begin{DoxyCompactList}\small\item\em Получение ключа от пользователя с валидацией \end{DoxyCompactList}\item 
+std\+::wstring \mbox{\hyperlink{main_8cpp_a298dd5f7470e3277c8e697dad3e2cd1f}{get\+Text\+From\+User}} (const std\+::wstring \&prompt)
+\begin{DoxyCompactList}\small\item\em Получение текста от пользователя \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a25b6a01c7e39eb72dd4c4f8666e25281}{process\+Cipher\+Operation}} (bool is\+Encryption)
+\begin{DoxyCompactList}\small\item\em Обработка операции шифрования или дешифрования \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_ace2f73cc1978464686fe70720082631f}{demonstrate\+Cipher}} ()
+\begin{DoxyCompactList}\small\item\em Демонстрация работы шифра на тестовых примерах \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_a47df70ebe3b749eacd9477bde96e2730}{demonstrate\+Input\+Errors}} ()
+\begin{DoxyCompactList}\small\item\em Демонстрация обработки ошибок ввода \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{main_8cpp_aec315d77f5c38417289a0e311d2a9d31}{show\+Help}} ()
+\begin{DoxyCompactList}\small\item\em Отображение справки по программе \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}{main}} ()
+\begin{DoxyCompactList}\small\item\em Главная функция программы \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Главный модуль программы шифрования табличной маршрутной перестановки 
+
+\begin{DoxyAuthor}{Автор}
+Ганьшин В.\+А. 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+17.\+12.\+2025
+\end{DoxyDate}
+Содержит пользовательский интерфейс для работы с шифром табличной перестановки 
+
+\doxysubsection{Функции}
+\Hypertarget{main_8cpp_ace2f73cc1978464686fe70720082631f}\label{main_8cpp_ace2f73cc1978464686fe70720082631f} 
+\index{main.cpp@{main.cpp}!demonstrateCipher@{demonstrateCipher}}
+\index{demonstrateCipher@{demonstrateCipher}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{demonstrateCipher()}{demonstrateCipher()}}
+{\footnotesize\ttfamily void demonstrate\+Cipher (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Демонстрация работы шифра на тестовых примерах 
+
+Показывает корректную работу шифра и обработку различных ошибок \Hypertarget{main_8cpp_a47df70ebe3b749eacd9477bde96e2730}\label{main_8cpp_a47df70ebe3b749eacd9477bde96e2730} 
+\index{main.cpp@{main.cpp}!demonstrateInputErrors@{demonstrateInputErrors}}
+\index{demonstrateInputErrors@{demonstrateInputErrors}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{demonstrateInputErrors()}{demonstrateInputErrors()}}
+{\footnotesize\ttfamily void demonstrate\+Input\+Errors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Демонстрация обработки ошибок ввода 
+
+Показывает, какие типы ошибок ввода обрабатывает программа \Hypertarget{main_8cpp_a391ca4439faae55f42dab42f27abb013}\label{main_8cpp_a391ca4439faae55f42dab42f27abb013} 
+\index{main.cpp@{main.cpp}!getKeyFromUser@{getKeyFromUser}}
+\index{getKeyFromUser@{getKeyFromUser}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{getKeyFromUser()}{getKeyFromUser()}}
+{\footnotesize\ttfamily int get\+Key\+From\+User (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Получение ключа от пользователя с валидацией 
+
+\begin{DoxyReturn}{Возвращает}
+Корректный ключ (количество столбцов)
+\end{DoxyReturn}
+Обрабатывает различные ошибки ввода\+: текст вместо чисел, символы, пустой ввод и т.\+д. \Hypertarget{main_8cpp_a298dd5f7470e3277c8e697dad3e2cd1f}\label{main_8cpp_a298dd5f7470e3277c8e697dad3e2cd1f} 
+\index{main.cpp@{main.cpp}!getTextFromUser@{getTextFromUser}}
+\index{getTextFromUser@{getTextFromUser}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{getTextFromUser()}{getTextFromUser()}}
+{\footnotesize\ttfamily std\+::wstring get\+Text\+From\+User (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{prompt }\end{DoxyParamCaption})}
+
+
+
+Получение текста от пользователя 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em prompt} & Приглашение для ввода \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Введенный текст 
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4}\label{main_8cpp_ae66f6b31b5ad750f1fe042a706a4e3d4} 
+\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Главная функция программы 
+
+\begin{DoxyReturn}{Возвращает}
+Код завершения программы
+\end{DoxyReturn}
+Реализует основной цикл программы с меню и обработкой пользовательского ввода \Hypertarget{main_8cpp_a25b6a01c7e39eb72dd4c4f8666e25281}\label{main_8cpp_a25b6a01c7e39eb72dd4c4f8666e25281} 
+\index{main.cpp@{main.cpp}!processCipherOperation@{processCipherOperation}}
+\index{processCipherOperation@{processCipherOperation}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{processCipherOperation()}{processCipherOperation()}}
+{\footnotesize\ttfamily void process\+Cipher\+Operation (\begin{DoxyParamCaption}\item[{bool}]{is\+Encryption }\end{DoxyParamCaption})}
+
+
+
+Обработка операции шифрования или дешифрования 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em is\+Encryption} & Флаг операции\+: true -\/ шифрование, false -\/ дешифрование\\
+\hline
+\end{DoxyParams}
+Выполняет всю последовательность операций для шифрования/дешифрования с обработкой исключений \Hypertarget{main_8cpp_aec315d77f5c38417289a0e311d2a9d31}\label{main_8cpp_aec315d77f5c38417289a0e311d2a9d31} 
+\index{main.cpp@{main.cpp}!showHelp@{showHelp}}
+\index{showHelp@{showHelp}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{showHelp()}{showHelp()}}
+{\footnotesize\ttfamily void show\+Help (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Отображение справки по программе 
+
+Содержит описание алгоритма, ограничения и демонстрационные примеры \Hypertarget{main_8cpp_ad612e1d5a3738c231a1aeefb21c4d36d}\label{main_8cpp_ad612e1d5a3738c231a1aeefb21c4d36d} 
+\index{main.cpp@{main.cpp}!string\_to\_wstring@{string\_to\_wstring}}
+\index{string\_to\_wstring@{string\_to\_wstring}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{string\_to\_wstring()}{string\_to\_wstring()}}
+{\footnotesize\ttfamily std\+::wstring string\+\_\+to\+\_\+wstring (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+Преобразование строки в широкую строку 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em str} & Обычная строка \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Широкая строка 
+\end{DoxyReturn}
+\Hypertarget{main_8cpp_a9e8d9796b27a47431c88a5387b1ed2a0}\label{main_8cpp_a9e8d9796b27a47431c88a5387b1ed2a0} 
+\index{main.cpp@{main.cpp}!wstring\_to\_string@{wstring\_to\_string}}
+\index{wstring\_to\_string@{wstring\_to\_string}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{wstring\_to\_string()}{wstring\_to\_string()}}
+{\footnotesize\ttfamily std\+::string wstring\+\_\+to\+\_\+string (\begin{DoxyParamCaption}\item[{const std\+::wstring \&}]{wstr }\end{DoxyParamCaption})}
+
+
+
+Преобразование широкой строки в обычную строку 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em wstr} & Широкая строка \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Возвращает}
+Обычная строка 
+\end{DoxyReturn}

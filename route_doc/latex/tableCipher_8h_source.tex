@@ -1,0 +1,36 @@
+\doxysection{table\+Cipher.\+h}
+\hypertarget{tableCipher_8h_source}{}\label{tableCipher_8h_source}\mbox{\hyperlink{tableCipher_8h}{См. документацию.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <stdexcept>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <locale>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <codecvt>}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classtable__cipher__error}{table\_cipher\_error}}\ :\ \textcolor{keyword}{public}\ std::exception\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00023\ \ \ \ \ std::string\ \mbox{\hyperlink{classtable__cipher__error_af3dcae09b44dd9d2224c243b791c8b4e}{message}};\ }
+\DoxyCodeLine{00024\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00029\ \ \ \ \ \textcolor{keyword}{explicit}\ \mbox{\hyperlink{classtable__cipher__error_a29c397b62f804066559dc238c21a782b}{table\_cipher\_error}}(\textcolor{keyword}{const}\ std::string\&\ msg)\ :\ \mbox{\hyperlink{classtable__cipher__error_af3dcae09b44dd9d2224c243b791c8b4e}{message}}(msg)\ \{\}}
+\DoxyCodeLine{00030\ \ \ \ \ }
+\DoxyCodeLine{00035\ \ \ \ \ \textcolor{keyword}{const}\ \textcolor{keywordtype}{char}*\ \mbox{\hyperlink{classtable__cipher__error_a82649edda3669992c3dc4a69d5ea8ce3}{what}}()\ const\ noexcept\textcolor{keyword}{\ override\ }\{}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{classtable__cipher__error_af3dcae09b44dd9d2224c243b791c8b4e}{message}}.c\_str();}
+\DoxyCodeLine{00037\ \ \ \ \ \}}
+\DoxyCodeLine{00038\ \};}
+\DoxyCodeLine{00039\ }
+\DoxyCodeLine{00047\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classTableCipher}{TableCipher}}\ \{}
+\DoxyCodeLine{00048\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00049\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classTableCipher_af93dabb0451a9011fe7b277ac4a814e3}{numColumns}};\ }
+\DoxyCodeLine{00050\ }
+\DoxyCodeLine{00051\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00057\ \ \ \ \ \mbox{\hyperlink{classTableCipher}{TableCipher}}(\textcolor{keywordtype}{int}\ key);}
+\DoxyCodeLine{00058\ \ \ \ \ }
+\DoxyCodeLine{00065\ \ \ \ \ std::wstring\ \mbox{\hyperlink{classTableCipher_a53d34df7efc5adca17fc99a51f647911}{encrypt}}(\textcolor{keyword}{const}\ std::wstring\&\ text);}
+\DoxyCodeLine{00066\ \ \ \ \ }
+\DoxyCodeLine{00073\ \ \ \ \ std::wstring\ \mbox{\hyperlink{classTableCipher_ad50734d082321b96192cf7683414e6f7}{decrypt}}(\textcolor{keyword}{const}\ std::wstring\&\ cipher\_text);}
+\DoxyCodeLine{00074\ \ \ \ \ }
+\DoxyCodeLine{00080\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classTableCipher_aa6a0fc03e41057e0ca61356519ed0de6}{validateKey}}(\textcolor{keywordtype}{int}\ key);}
+\DoxyCodeLine{00081\ \};}
+
+\end{DoxyCode}

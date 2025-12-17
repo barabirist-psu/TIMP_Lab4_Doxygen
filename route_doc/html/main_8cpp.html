@@ -1,0 +1,374 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Шифрование методом маршрутной перестановки: Файл main.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Шифрование методом маршрутной перестановки<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл main.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Главный модуль программы шифрования табличной маршрутной перестановки  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><code>#include &quot;<a class="el" href="tableCipher_8h_source.html">tableCipher.h</a>&quot;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;limits&gt;</code><br />
+<code>#include &lt;locale&gt;</code><br />
+<code>#include &lt;codecvt&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для main.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="main_8cpp__incl.png" border="0" usemap="#amain_8cpp" alt=""/></div>
+<map name="amain_8cpp" id="amain_8cpp">
+<area shape="rect" title="Главный модуль программы шифрования табличной маршрутной перестановки" alt="" coords="313,5,387,31"/>
+<area shape="rect" href="tableCipher_8h.html" title="Заголовочный файл для модуля шифрования табличной маршрутной перестановки" alt="" coords="163,79,262,104"/>
+<area shape="poly" title=" " alt="" coords="329,33,248,75,246,70,327,28"/>
+<area shape="rect" title=" " alt="" coords="5,152,60,177"/>
+<area shape="poly" title=" " alt="" coords="313,29,237,49,194,63,153,81,101,112,58,145,55,141,98,108,150,76,192,58,236,44,312,24"/>
+<area shape="rect" title=" " alt="" coords="269,152,325,177"/>
+<area shape="poly" title=" " alt="" coords="348,32,308,140,303,138,343,30"/>
+<area shape="rect" title=" " alt="" coords="349,152,417,177"/>
+<area shape="poly" title=" " alt="" coords="355,31,380,138,375,139,350,32"/>
+<area shape="rect" title=" " alt="" coords="387,79,459,104"/>
+<area shape="poly" title=" " alt="" coords="364,29,403,67,400,71,360,33"/>
+<area shape="rect" title=" " alt="" coords="483,79,537,104"/>
+<area shape="poly" title=" " alt="" coords="377,28,472,71,470,75,375,33"/>
+<area shape="rect" title=" " alt="" coords="561,79,630,104"/>
+<area shape="poly" title=" " alt="" coords="389,28,548,74,546,79,387,33"/>
+<area shape="poly" title=" " alt="" coords="185,107,74,150,72,145,183,102"/>
+<area shape="rect" title=" " alt="" coords="187,152,244,177"/>
+<area shape="poly" title=" " alt="" coords="216,104,217,138,212,139,210,104"/>
+<area shape="rect" title=" " alt="" coords="84,152,163,177"/>
+<area shape="poly" title=" " alt="" coords="200,106,150,145,147,141,197,102"/>
+<area shape="poly" title=" " alt="" coords="228,102,274,141,271,145,224,106"/>
+<area shape="poly" title=" " alt="" coords="241,102,344,144,342,149,239,106"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ad612e1d5a3738c231a1aeefb21c4d36d" id="r_ad612e1d5a3738c231a1aeefb21c4d36d"><td class="memItemLeft" align="right" valign="top">std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ad612e1d5a3738c231a1aeefb21c4d36d">string_to_wstring</a> (const std::string &amp;str)</td></tr>
+<tr class="memdesc:ad612e1d5a3738c231a1aeefb21c4d36d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразование строки в широкую строку  <br /></td></tr>
+<tr class="separator:ad612e1d5a3738c231a1aeefb21c4d36d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e8d9796b27a47431c88a5387b1ed2a0" id="r_a9e8d9796b27a47431c88a5387b1ed2a0"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a9e8d9796b27a47431c88a5387b1ed2a0">wstring_to_string</a> (const std::wstring &amp;wstr)</td></tr>
+<tr class="memdesc:a9e8d9796b27a47431c88a5387b1ed2a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Преобразование широкой строки в обычную строку  <br /></td></tr>
+<tr class="separator:a9e8d9796b27a47431c88a5387b1ed2a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59c2926dd9b0968badf463aaf4f91422" id="r_a59c2926dd9b0968badf463aaf4f91422"><td class="memItemLeft" align="right" valign="top"><a id="a59c2926dd9b0968badf463aaf4f91422" name="a59c2926dd9b0968badf463aaf4f91422"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>displayMenu</b> ()</td></tr>
+<tr class="memdesc:a59c2926dd9b0968badf463aaf4f91422"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отображение главного меню программы <br /></td></tr>
+<tr class="separator:a59c2926dd9b0968badf463aaf4f91422"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a391ca4439faae55f42dab42f27abb013" id="r_a391ca4439faae55f42dab42f27abb013"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a391ca4439faae55f42dab42f27abb013">getKeyFromUser</a> ()</td></tr>
+<tr class="memdesc:a391ca4439faae55f42dab42f27abb013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение ключа от пользователя с валидацией  <br /></td></tr>
+<tr class="separator:a391ca4439faae55f42dab42f27abb013"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a298dd5f7470e3277c8e697dad3e2cd1f" id="r_a298dd5f7470e3277c8e697dad3e2cd1f"><td class="memItemLeft" align="right" valign="top">std::wstring&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a298dd5f7470e3277c8e697dad3e2cd1f">getTextFromUser</a> (const std::wstring &amp;prompt)</td></tr>
+<tr class="memdesc:a298dd5f7470e3277c8e697dad3e2cd1f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получение текста от пользователя  <br /></td></tr>
+<tr class="separator:a298dd5f7470e3277c8e697dad3e2cd1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25b6a01c7e39eb72dd4c4f8666e25281" id="r_a25b6a01c7e39eb72dd4c4f8666e25281"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a25b6a01c7e39eb72dd4c4f8666e25281">processCipherOperation</a> (bool isEncryption)</td></tr>
+<tr class="memdesc:a25b6a01c7e39eb72dd4c4f8666e25281"><td class="mdescLeft">&#160;</td><td class="mdescRight">Обработка операции шифрования или дешифрования  <br /></td></tr>
+<tr class="separator:a25b6a01c7e39eb72dd4c4f8666e25281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace2f73cc1978464686fe70720082631f" id="r_ace2f73cc1978464686fe70720082631f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ace2f73cc1978464686fe70720082631f">demonstrateCipher</a> ()</td></tr>
+<tr class="memdesc:ace2f73cc1978464686fe70720082631f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Демонстрация работы шифра на тестовых примерах  <br /></td></tr>
+<tr class="separator:ace2f73cc1978464686fe70720082631f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a47df70ebe3b749eacd9477bde96e2730" id="r_a47df70ebe3b749eacd9477bde96e2730"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#a47df70ebe3b749eacd9477bde96e2730">demonstrateInputErrors</a> ()</td></tr>
+<tr class="memdesc:a47df70ebe3b749eacd9477bde96e2730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Демонстрация обработки ошибок ввода  <br /></td></tr>
+<tr class="separator:a47df70ebe3b749eacd9477bde96e2730"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec315d77f5c38417289a0e311d2a9d31" id="r_aec315d77f5c38417289a0e311d2a9d31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#aec315d77f5c38417289a0e311d2a9d31">showHelp</a> ()</td></tr>
+<tr class="memdesc:aec315d77f5c38417289a0e311d2a9d31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Отображение справки по программе  <br /></td></tr>
+<tr class="separator:aec315d77f5c38417289a0e311d2a9d31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae66f6b31b5ad750f1fe042a706a4e3d4" id="r_ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="main_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a> ()</td></tr>
+<tr class="memdesc:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Главная функция программы  <br /></td></tr>
+<tr class="separator:ae66f6b31b5ad750f1fe042a706a4e3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Главный модуль программы шифрования табличной маршрутной перестановки </p>
+<dl class="section author"><dt>Автор</dt><dd>Ганьшин В.А. </dd></dl>
+<dl class="section version"><dt>Версия</dt><dd>1.0 </dd></dl>
+<dl class="section date"><dt>Дата</dt><dd>17.12.2025</dd></dl>
+<p>Содержит пользовательский интерфейс для работы с шифром табличной перестановки </p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="ace2f73cc1978464686fe70720082631f" name="ace2f73cc1978464686fe70720082631f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ace2f73cc1978464686fe70720082631f">&#9670;&#160;</a></span>demonstrateCipher()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void demonstrateCipher </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Демонстрация работы шифра на тестовых примерах </p>
+<p>Показывает корректную работу шифра и обработку различных ошибок </p>
+
+</div>
+</div>
+<a id="a47df70ebe3b749eacd9477bde96e2730" name="a47df70ebe3b749eacd9477bde96e2730"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a47df70ebe3b749eacd9477bde96e2730">&#9670;&#160;</a></span>demonstrateInputErrors()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void demonstrateInputErrors </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Демонстрация обработки ошибок ввода </p>
+<p>Показывает, какие типы ошибок ввода обрабатывает программа </p>
+
+</div>
+</div>
+<a id="a391ca4439faae55f42dab42f27abb013" name="a391ca4439faae55f42dab42f27abb013"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a391ca4439faae55f42dab42f27abb013">&#9670;&#160;</a></span>getKeyFromUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int getKeyFromUser </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение ключа от пользователя с валидацией </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Корректный ключ (количество столбцов)</dd></dl>
+<p>Обрабатывает различные ошибки ввода: текст вместо чисел, символы, пустой ввод и т.д. </p>
+
+</div>
+</div>
+<a id="a298dd5f7470e3277c8e697dad3e2cd1f" name="a298dd5f7470e3277c8e697dad3e2cd1f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a298dd5f7470e3277c8e697dad3e2cd1f">&#9670;&#160;</a></span>getTextFromUser()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::wstring getTextFromUser </td>
+          <td>(</td>
+          <td class="paramtype">const std::wstring &amp;&#160;</td>
+          <td class="paramname"><em>prompt</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Получение текста от пользователя </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">prompt</td><td>Приглашение для ввода </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Введенный текст </dd></dl>
+
+</div>
+</div>
+<a id="ae66f6b31b5ad750f1fe042a706a4e3d4" name="ae66f6b31b5ad750f1fe042a706a4e3d4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae66f6b31b5ad750f1fe042a706a4e3d4">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Главная функция программы </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Код завершения программы</dd></dl>
+<p>Реализует основной цикл программы с меню и обработкой пользовательского ввода </p>
+
+</div>
+</div>
+<a id="a25b6a01c7e39eb72dd4c4f8666e25281" name="a25b6a01c7e39eb72dd4c4f8666e25281"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25b6a01c7e39eb72dd4c4f8666e25281">&#9670;&#160;</a></span>processCipherOperation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void processCipherOperation </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isEncryption</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Обработка операции шифрования или дешифрования </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isEncryption</td><td>Флаг операции: true - шифрование, false - дешифрование</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Выполняет всю последовательность операций для шифрования/дешифрования с обработкой исключений </p>
+
+</div>
+</div>
+<a id="aec315d77f5c38417289a0e311d2a9d31" name="aec315d77f5c38417289a0e311d2a9d31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aec315d77f5c38417289a0e311d2a9d31">&#9670;&#160;</a></span>showHelp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void showHelp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Отображение справки по программе </p>
+<p>Содержит описание алгоритма, ограничения и демонстрационные примеры </p>
+
+</div>
+</div>
+<a id="ad612e1d5a3738c231a1aeefb21c4d36d" name="ad612e1d5a3738c231a1aeefb21c4d36d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad612e1d5a3738c231a1aeefb21c4d36d">&#9670;&#160;</a></span>string_to_wstring()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::wstring string_to_wstring </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>str</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Преобразование строки в широкую строку </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">str</td><td>Обычная строка </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Широкая строка </dd></dl>
+
+</div>
+</div>
+<a id="a9e8d9796b27a47431c88a5387b1ed2a0" name="a9e8d9796b27a47431c88a5387b1ed2a0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9e8d9796b27a47431c88a5387b1ed2a0">&#9670;&#160;</a></span>wstring_to_string()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string wstring_to_string </td>
+          <td>(</td>
+          <td class="paramtype">const std::wstring &amp;&#160;</td>
+          <td class="paramname"><em>wstr</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Преобразование широкой строки в обычную строку </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">wstr</td><td>Широкая строка </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Обычная строка </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

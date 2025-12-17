@@ -1,0 +1,76 @@
+\doxysection{Файл table\+Cipher.\+cpp}
+\hypertarget{tableCipher_8cpp}{}\label{tableCipher_8cpp}\index{tableCipher.cpp@{tableCipher.cpp}}
+
+
+Реализация класса \doxylink{classTableCipher}{Table\+Cipher} для шифрования табличной маршрутной перестановки  
+
+
+{\ttfamily \#include "{}table\+Cipher.\+h"{}}\newline
+{\ttfamily \#include $<$algorithm$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$cwctype$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+Граф включаемых заголовочных файлов для table\+Cipher.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tableCipher_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Функции}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{tableCipher_8cpp_a0df32ad48c65138f209b50f27ad7d914}{debug\+Print\+Table}} (const std\+::vector$<$ std\+::vector$<$ wchar\+\_\+t $>$ $>$ \&table, int num\+Rows, int num\+Columns)
+\begin{DoxyCompactList}\small\item\em Вспомогательная функция для отладки -\/ вывод таблицы в консоль \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Реализация класса \doxylink{classTableCipher}{Table\+Cipher} для шифрования табличной маршрутной перестановки 
+
+\begin{DoxyAuthor}{Автор}
+Ганьшин В.\+А. 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Версия}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Дата}
+17.\+12.\+2025
+\end{DoxyDate}
+Содержит полную реализацию всех методов класса \doxylink{classTableCipher}{Table\+Cipher}\+:
+\begin{DoxyItemize}
+\item Конструктор с валидацией ключа
+\item Метод encrypt() для шифрования текста
+\item Метод decrypt() для расшифрования текста
+\item Метод validate\+Key() для проверки корректности ключа \begin{DoxyCopyright}{Авторство}
+Учебный проект 
+\end{DoxyCopyright}
+\begin{DoxyWarning}{Предупреждения}
+Реализация поддерживает только буквы и пробелы 
+\end{DoxyWarning}
+
+\end{DoxyItemize}
+
+\doxysubsection{Функции}
+\Hypertarget{tableCipher_8cpp_a0df32ad48c65138f209b50f27ad7d914}\label{tableCipher_8cpp_a0df32ad48c65138f209b50f27ad7d914} 
+\index{tableCipher.cpp@{tableCipher.cpp}!debugPrintTable@{debugPrintTable}}
+\index{debugPrintTable@{debugPrintTable}!tableCipher.cpp@{tableCipher.cpp}}
+\doxysubsubsection{\texorpdfstring{debugPrintTable()}{debugPrintTable()}}
+{\footnotesize\ttfamily void debug\+Print\+Table (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ wchar\+\_\+t $>$ $>$ \&}]{table,  }\item[{int}]{num\+Rows,  }\item[{int}]{num\+Columns }\end{DoxyParamCaption})}
+
+
+
+Вспомогательная функция для отладки -\/ вывод таблицы в консоль 
+
+
+\begin{DoxyParams}{Аргументы}
+{\em table} & Таблица для вывода \\
+\hline
+{\em num\+Rows} & Количество строк \\
+\hline
+{\em num\+Columns} & Количество столбцов \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Заметки}
+Эта функция используется только для отладки и не включена в публичный интерфейс 
+\end{DoxyNote}
